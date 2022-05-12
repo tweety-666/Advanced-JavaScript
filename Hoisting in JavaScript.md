@@ -1,4 +1,4 @@
-# hoisting
+# Hoisting in JavaScript
 ###### tags: `javascript`、`ES6`、`hoisting`
 ## 什麼是hoisting?
 在「創造階段」所做的，在執行環境(Execution Contexts)為變數及函式保留記憶體空間的動作，就被稱為提升( Hoisting )。
