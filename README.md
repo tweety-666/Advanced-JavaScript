@@ -1,2 +1,2 @@
-# advanced-JavaScript
+# Advanced JavaScript
 Notes for advanced JavaScript.
