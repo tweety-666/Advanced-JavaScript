@@ -45,9 +45,9 @@ add2(10).then(v => {
 ```
 
 ## async和Generator的差異
-async函式回傳一個Promise物件，可以使用then方法添加回調函式。當函式執行的時候，一遇到await就會先暫停，等到異步操作完成，再接續執行函式內後面的語句。
+async函式回傳一個Promise物件，可以使用then方法添加callback。當函式執行的時候，一遇到await就會先暫停，等到異步操作完成，再接續執行函式內後面的語句。
 
-下方範例，一比較就會發現，async函數就是將Generator函數的星號（*）替換成async，將yield替換成await。
+下方範例，一比較就會發現，async函式就是將Generator函式的星號（*）替換成async，將yield替換成await。
 有一個Generator函式，依次讀取兩個文件。
 ```javascript=
 const fs = require('fs');
@@ -93,4 +93,3 @@ async和await，比起星號和yield，語義更清楚了。async表示函式有
 async函式的回傳值是Promise物件，這比Generator函式的回傳值是Iterator物件方便多了。你可以用then方法指定下一步的操作。
 **async函式完全可以當作是多個異步操作包裝成的一個Promise物件，而await就是內部then的語法糖。**
 
-## 範例
